@@ -8,6 +8,7 @@ import androidx.annotation.Nullable;
 
 import com.dicoding.picodiploma.mynotesapp.db.DatabaseContract.NoteColumns;
 
+
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static String DATABASE_NAME = "dbnoteapp";
     private static final int DATABASE_VERSION = 1;
@@ -16,7 +17,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL)",
-            DatabaseContract.TABLE_NAME,
+            NoteColumns.TABLE_NAME,
             NoteColumns._ID,
             NoteColumns.TITLE,
             NoteColumns.DESCRIPTION,
@@ -34,7 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + DatabaseContract.TABLE_NAME);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + NoteColumns.TABLE_NAME);
         onCreate(sqLiteDatabase);
     }
 }

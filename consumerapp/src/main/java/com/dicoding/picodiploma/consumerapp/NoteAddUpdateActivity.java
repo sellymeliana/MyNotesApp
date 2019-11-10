@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.mynotesapp;
+package com.dicoding.picodiploma.consumerapp;
 
 import android.content.ContentValues;
 import android.content.DialogInterface;
@@ -16,18 +16,18 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.dicoding.picodiploma.mynotesapp.entity.Note;
-import com.dicoding.picodiploma.mynotesapp.helper.MappingHelper;
+import com.dicoding.picodiploma.consumerapp.entity.Note;
+import com.dicoding.picodiploma.consumerapp.helper.MappingHelper;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static com.dicoding.picodiploma.mynotesapp.db.DatabaseContract.NoteColumns.CONTENT_URI;
-import static com.dicoding.picodiploma.mynotesapp.db.DatabaseContract.NoteColumns.DATE;
-import static com.dicoding.picodiploma.mynotesapp.db.DatabaseContract.NoteColumns.DESCRIPTION;
-import static com.dicoding.picodiploma.mynotesapp.db.DatabaseContract.NoteColumns.TITLE;
+import static com.dicoding.picodiploma.consumerapp.db.DatabaseContract.NoteColumns.CONTENT_URI;
+import static com.dicoding.picodiploma.consumerapp.db.DatabaseContract.NoteColumns.DATE;
+import static com.dicoding.picodiploma.consumerapp.db.DatabaseContract.NoteColumns.DESCRIPTION;
+import static com.dicoding.picodiploma.consumerapp.db.DatabaseContract.NoteColumns.TITLE;
 
 
 public class NoteAddUpdateActivity extends AppCompatActivity implements View.OnClickListener {

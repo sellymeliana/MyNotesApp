@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.mynotesapp;
+package com.dicoding.picodiploma.consumerapp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,10 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.dicoding.picodiploma.mynotesapp.adapter.NoteAdapter;
-import com.dicoding.picodiploma.mynotesapp.db.DatabaseContract;
-import com.dicoding.picodiploma.mynotesapp.entity.Note;
-import com.dicoding.picodiploma.mynotesapp.helper.MappingHelper;
+import com.dicoding.picodiploma.consumerapp.adapter.NoteAdapter;
+import com.dicoding.picodiploma.consumerapp.db.DatabaseContract;
+import com.dicoding.picodiploma.consumerapp.entity.Note;
+import com.dicoding.picodiploma.consumerapp.helper.MappingHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements LoadNotesCallback
         setContentView(R.layout.activity_main);
 
         if (getSupportActionBar() != null)
-            getSupportActionBar().setTitle("Notes");
+            getSupportActionBar().setTitle("Consumer Notes");
 
         progressBar = findViewById(R.id.progressbar);
         rvNotes = findViewById(R.id.rv_notes);
